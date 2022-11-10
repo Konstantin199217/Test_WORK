@@ -21,4 +21,4 @@
 
 **_Код_** - TEST_WORK\Task\Program.cs
 
-**_Блок-схема_** - в папке TEST_WORK
+**_Блок-схема_** - Test_Work.drawio
