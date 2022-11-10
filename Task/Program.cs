@@ -13,25 +13,29 @@
 Console.WriteLine("Введите ваш массив: ");
 string[] Array = Console.ReadLine().Split();
 string[] NewArray = new string[Array.Length];
-int word = 0;
-for (int i = 0; i < Array.Count(); i++)
-{ 
-    if (Array[i].Length <= 3)
+void EditArrays(string[] array1, string[] array2)
+{
+    int word = 0;
+    for (int i = 0; i < Array.Length; i++)
     {
-        NewArray[word] = Array[i];
-        word++;
+        if (Array[i].Length <= 3)
+        {
+            NewArray[word] = Array[i];
+            word++;
+        }
     }
 }
 void PrintArray(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        Console.WriteLine($"{array[i]}\t");
+        Console.Write($"{array[i]}\t");
     }
     Console.WriteLine();
 }
 Console.WriteLine("Изначальный массив: ");
 PrintArray(Array);
+EditArrays(Array, NewArray);
 Console.WriteLine("Редоктированный массив: ");
 PrintArray(NewArray);
 
